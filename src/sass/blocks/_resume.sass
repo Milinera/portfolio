@@ -1,0 +1,120 @@
+.resume
+    min-height: 559px
+    margin-top: 120px
+    &__title
+        position: relative
+        @include before_circle
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+        text-align: center
+        &::before
+            top: -20%
+            left: 50%
+            transform: translateX(-50%)
+    &__subtitle
+        margin-top: 6px
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        line-height: 60px
+        color: #000000
+        text-align: center
+    &__diveder
+        margin: 0 auto
+        margin-top: 25px
+        width: 60px
+        height: 3px
+        background-color: $main-color
+    &__ul 
+        display: flex
+        justify-content: space-between
+        margin-top: 60px
+        position: relative
+        &_first
+            width: 425px
+            position: relative
+            &::after
+                content: ' '
+                width: 1px
+                height: 100%
+                position: absolute
+                top: 22px
+                left: 0
+                background-color: black
+        &_second
+            width: 425px
+            position: relative
+            &::after
+                content: ' '
+                width: 1px
+                height: 100%
+                position: absolute
+                top: 22px
+                left: 0
+                background-color: black
+        &_title
+            position: relative
+            @include before_circle
+            padding-left: 35px
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+            line-height: 30px
+            color: #000000
+            margin-bottom: 45px
+            &::before
+                top: 50%
+                transform: translateY(-50%)
+                left: -7px
+                width: 15px
+                height: 15px
+        &_li
+            margin-top: 45px
+    &__li
+        &_img
+            margin-left: 60px
+            position: relative
+            float: left
+            @include before_circle
+            &::before
+                top: -51%
+                left: -70%
+            &::after
+                width: 43px
+                height: 1px
+                background-color: black
+                top: 20%
+                left: -60px
+                content: ' '
+                position: absolute
+        &_title
+            margin-left: 100px
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 700
+            font-size: 14px
+            line-height: 21px
+            color: #000000
+        &_subtitle
+            margin-left: 100px
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
+        &_descr
+            margin-left: 60px
+            margin-top: 12px
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000

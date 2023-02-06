@@ -1,0 +1,39 @@
+@media (max-width: 768px)
+    .promo
+        .container
+            padding: 50px 0 50px 140px
+    .container
+        width: 768px
+    .resume
+        .resume__ul
+            display: block
+            &_first, &_second
+                margin: 0 auto
+                margin-top: 30px
+    .skills
+        .skills__table
+            justify-content: space-around
+        .skills__wraper
+            margin: 45px
+        .skills__point 
+            width: 500px
+            margin: 0 auto
+    .progect
+        .progect__wrapper
+            padding: 100px
+            grid-template: repeat(4, 280px) / repeat(2, 280px)
+            .horz
+                grid-row: 2/4
+                grid-column: 2/3
+            .vert
+                grid-column: 1/3
+                grid-row: 4/5
+    .contacts
+        .contacts__wrapper
+            grid-template-columns: 250px 400px
+        .contacts__form
+            grid-template: 30px 220px 60px 80px / 50% 50%
+        button
+            padding: 4px 14px
+@media (max-width: 575px)
+

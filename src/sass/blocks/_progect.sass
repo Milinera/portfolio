@@ -1,0 +1,50 @@
+.progect
+    padding-top: 120px
+    &__title
+        text-align: center
+        position: relative
+        @include before_circle
+        &:before
+            top: -20%
+            left: 50%
+            transform: translateX(-50%)
+    &__subtitle
+        text-align: center
+        margin-top: 6px
+    &__wrapper
+        margin-top: 35px
+        display: grid
+        grid-template: repeat(2, 280px) / repeat(4, 280px)
+        grid-auto-rows: 280px
+        gap: 5px
+        .horz
+            grid-row: 1 / 3
+            grid-column:  4 / 5
+        .vert
+            grid-column: 2 / 4
+            grid-row: 2 / 3
+        .progect__item
+            transition: 0.5s all
+            &:hover
+                transform: scale(1.05)
+                filter: opacity(90%)
+            img
+                object-fit: cover
+                width: 100%
+                height: 100%
+        .ocup
+            transition: 0.5s all
+            &:hover
+                filter: opacity(10%)
+    &__item
+        position: relative
+.test
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: -1
+    transform: translate(-50%, -50%)
+    font-size: 36px
+    color: black
+    text-decoration: none
+    text-align: center

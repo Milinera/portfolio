@@ -1,0 +1,206 @@
+@media (max-width: 1200px)
+    .menu
+        .menu_item
+            padding-right: 20px
+        .menu_link
+            font-size: 13px
+    .promo
+        .promo_header
+            font-size: 50px
+    footer
+        .footer_wrapper>div
+            .footer_links
+                width: 100%
+                .footer_links_sub
+                    a
+                        font-size: 10px
+
+@media (max-width: 991px)
+    .menu
+        .menu_item
+            padding-right: 8px
+        .menu_link
+            font-size: 10px
+    .promo
+        .promo_header
+            font-size: 40px
+        .promo_supheader
+            font-size: 30px
+    .supheader
+        .supheader_logo
+            img
+                width: 100%
+        .supheader_official
+            font-size: 11px
+        .supheader_phone
+            font-size: 18px
+        .supheader_btn
+            width: 100%
+            height: 40px
+            margin-top: 21px
+    .mobile
+        .mobile_item
+            height: 230px
+            width: 230px
+            .mobile_item_suptitle
+                font-size: 18px
+    .car
+        min-height: 400px
+        padding: 0px
+    footer
+        
+        .footer_links
+            a
+                font-size: 10px
+
+@media (max-width: 768px)
+    .menu
+        justify-content: center
+        align-items: center
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: 0
+        .menu_link
+                font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+         display: none
+
+    header
+        .supheader
+            .xs-visible
+                display: block
+            .supheader_phone
+                display: block 
+                font-weight: 400
+                font-size: 18px
+                text-align: center
+                text-transform: uppercase
+                color: #FFFFFF
+                margin-top: 0px
+        .supheader
+            .supheader_btn
+                margin-top: 0px
+                display: block
+                margin: 0 auto
+                width: 150px
+    .promo
+        .promo_header
+            line-height: 45px 
+    footer
+        .footer_wrapper
+            display: flex
+            flex-direction: column
+            padding-top: 0px
+            div
+                width: 100%
+                display: flex
+                justify-content: center
+                &:nth-child(2)
+                    order: -1
+                    .footer_links
+                        display: flex
+                        flex-direction: column
+                        .footer_links_sub, .footer_links_main
+                            margin: 3px
+                            a
+                                margin-right: 5px
+                        .footer_links_lang
+                            margin: 3px
+                &:nth-child(1) 
+                    margin: 7px 0         
+ 
+@media (max-width: 575px)
+    header
+        .supheader
+            height: 60px
+            .supheader_official
+                display: none
+            .supheader_logo
+                margin-top: 16px 
+            .supheader_phone
+                font-weight: 400
+                font-size: 12px
+                text-align: center
+                text-transform: uppercase
+                color: #FFFFFF
+                line-height: 20px
+            .supheader_btn
+                width: 110px
+                height: 22px
+                font-weight: 400
+                font-size: 10px
+                line-height: 22px
+    .promo
+        min-height: 400px
+        padding: 93px 0 30px 0
+        .promo_descr
+            display: none
+        .promo_header
+            font-size: 30px
+            padding: 0 24px
+        .promo_btn
+            width: 189px
+            height: 50px
+            font-size: 16px
+            margin-top: 18px
+    .mobile
+        .mobile_item
+            width: 180px
+            height: 180px
+            .mobile_item_suptitle
+                font-size: 12px
+                line-height: 15px
+            .mobile_item_plus
+                bottom: 15px
+    .car
+        min-height: 400px
+        padding: 0px
+    .world
+        min-height: 200px
+        .world_link
+            margin-top: 100px
+    .reasons
+        .reasons_round
+            width: 100px
+            height: 100px
+        .reasons_descr
+            margin-left: 0px
+            margin-top: 110px
+        .reasons_supdescr
+            margin-left: 0px
+            font-weight: 300
