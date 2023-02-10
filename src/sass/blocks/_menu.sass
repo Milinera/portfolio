@@ -1,13 +1,16 @@
 .hamburger
-    position: absolute
+    position: fixed
     top: 20px
     right: 30px
-    height: 21px
+    height: 22px
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: flex-end
     cursor: pointer
+    &:hover
+        span
+            background-color: $main-color
     span
         width: 30px
         height: 3px
@@ -71,14 +74,22 @@
             &:hover
                 color: black
     &__social
-        width: 90px
+        width: 200px
         position: absolute
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
         bottom: 50px
         left: 50%
         transform: translateX(-50%)
+        a
+            text-decoration: none
+            span
+                text-decoration: none
+                color: black
+                font-size: 25px
+                &:hover
+                    color: white
     &__overlay
         top: 0
         position: fixed
